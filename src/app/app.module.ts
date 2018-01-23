@@ -14,6 +14,7 @@ import { RecipeService } from './services/recipe.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { RecipeFormComponent } from './recipes/recipe-form/recipe-form.component';
 import { NotFoundRecipeComponent } from './not-found-recipe/not-found-recipe.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NotFoundRecipeComponent } from './not-found-recipe/not-found-recipe.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ ShoppingListService,RecipeService],
   bootstrap: [AppComponent]
